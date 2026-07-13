@@ -1,0 +1,951 @@
+/* ==========================================================
+   MAR CONSULTANCY
+   HOME PAGE
+   ========================================================== */
+
+/* ==========================================================
+   HERO
+   ========================================================== */
+
+.hero{
+
+    position:relative;
+
+    min-height:auto;
+
+    padding:120px 0 90px;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    background:
+    linear-gradient(
+        rgba(10,32,74,.82),
+        rgba(10,32,74,.82)
+    ),
+    url("../images/hero/hero-bg.jpg");
+
+    background-size:cover;
+    background-position:center;
+
+}
+
+.hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(circle at top right,
+    rgba(255,255,255,.12),
+    transparent 45%);
+
+    pointer-events:none;
+
+}
+
+.hero .container{
+
+    position:relative;
+
+    z-index:5;
+
+}
+
+.hero h1{
+
+    color:#fff;
+
+    font-weight:800;
+
+    font-size:4rem;
+
+    line-height:1.15;
+
+}
+
+.hero p{
+
+    color:#e7eef8;
+
+    max-width:650px;
+
+    font-size:1.15rem;
+
+}
+
+.hero-buttons{
+
+    margin-top:35px;
+
+}
+
+.hero-buttons .btn{
+
+    margin-right:15px;
+
+}
+
+.hero img{
+
+    animation:heroFloat 5s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+    0%{
+
+        transform:translateY(0px);
+
+    }
+
+    50%{
+
+        transform:translateY(-18px);
+
+    }
+
+    100%{
+
+        transform:translateY(0px);
+
+    }
+
+}
+
+/* ==========================================================
+   HERO SHAPES
+   ========================================================== */
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:450px;
+
+    height:450px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.05);
+
+    right:-140px;
+
+    top:-120px;
+
+}
+
+.hero-shape{
+
+    position:absolute;
+
+    border-radius:50%;
+
+    animation:floatShape 8s infinite ease-in-out;
+
+}
+
+.hero-shape.one{
+
+    width:120px;
+
+    height:120px;
+
+    background:rgba(255,255,255,.06);
+
+    left:8%;
+
+    bottom:10%;
+
+}
+
+.hero-shape.two{
+
+    width:70px;
+
+    height:70px;
+
+    background:rgba(245,158,11,.20);
+
+    right:18%;
+
+    bottom:15%;
+
+}
+
+@keyframes floatShape{
+
+    0%{
+
+        transform:translateY(0);
+
+    }
+
+    50%{
+
+        transform:translateY(-25px);
+
+    }
+
+    100%{
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/* ==========================================================
+   STATISTICS
+   ========================================================== */
+
+.stats{
+
+    position:relative;
+
+    margin-top:-90px;
+
+    z-index:10;
+
+}
+
+.stat-card{
+
+    background:#fff;
+
+    border-radius:20px;
+
+    padding:40px 20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:var(--shadow-lg);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.stat-card h2{
+
+    color:var(--primary);
+
+    font-size:2.3rem;
+
+    font-weight:800;
+
+}
+
+.stat-card p{
+
+    margin:0;
+
+}
+
+/* ==========================================================
+   SECTION TITLE
+   ========================================================== */
+
+.section-title{
+
+    margin-bottom:60px;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    padding:8px 18px;
+
+    background:#eef5ff;
+
+    border-radius:50px;
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    margin-bottom:18px;
+
+}
+
+.section-title h2{
+
+    font-size:2.8rem;
+
+    margin-bottom:15px;
+
+}
+
+.section-title p{
+
+    max-width:700px;
+
+    margin:auto;
+
+}
+
+/* ==========================================================
+   SERVICE CARD
+   ========================================================== */
+
+.service-card{
+
+    border:none;
+
+    overflow:hidden;
+
+    transition:.35s;
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.service-card .icon{
+
+    transition:.35s;
+
+}
+
+.service-card:hover .icon{
+
+    transform:rotate(10deg) scale(1.12);
+
+}
+
+/* ==========================================================
+   COUNTRY CARDS
+   ========================================================== */
+/* ==========================================================
+   COUNTRY CARDS
+   ========================================================== */
+
+.country-card {
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Optional: Soft card shadow */
+}
+
+/* TARGET ONLY THE BANNER IMAGE (Direct child of the card) */
+.country-card > img {
+    display: block;
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transition: transform .45s ease;
+}
+
+.country-card:hover > img {
+    transform: scale(1.08);
+}
+
+.country-body {
+    background: #fff;
+    padding: 20px; /* Gives the text inside a nice cushion */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.country-body h4 {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Creates a clean gap between the small icon and the text */
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+/* TARGET ONLY THE SMALL FLAG ICON INSIDE THE H4 */
+.country-body .country-flag {
+    width: 30px;      /* Restricts the icon to a proper small width */
+    height: 20px;     /* Keeps the flag aspect ratio nice */
+    object-fit: cover;
+    border-radius: 3px;
+    transform: none !important; /* Prevents the hover zoom effect on the mini flag */
+}
+
+.country-body p {
+    margin-bottom: auto; /* Pushes the button to the bottom if text lengths differ */
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.country-body .btn {
+    margin-top: 15px;
+    align-self: flex-start; /* Prevents button from stretching full-width */
+}
+
+/* ==========================================================
+   UNIVERSITY LOGOS
+   ========================================================== */
+
+.university-logo{
+
+    filter:grayscale(100%);
+
+    opacity:.65;
+
+    transition:.35s;
+
+}
+
+.university-logo:hover{
+
+    filter:none;
+
+    opacity:1;
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================================
+   CTA
+   ========================================================== */
+
+.cta{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-120px;
+
+    right:-120px;
+
+}
+
+.cta *{
+
+    position:relative;
+
+    z-index:2;
+
+}
+/* ==========================================================
+   ADMISSION PROCESS
+========================================================== */
+
+.process-card{
+
+    position:relative;
+
+    text-align:center;
+
+    padding:30px 20px;
+
+    transition:.35s;
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+.process-number{
+
+    width:80px;
+
+    height:80px;
+
+    margin:0 auto 25px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:var(--gradient-primary);
+
+    color:#fff;
+
+    font-size:30px;
+
+    font-weight:700;
+
+    box-shadow:0 15px 35px rgba(13,110,253,.25);
+
+}
+
+.process-card h5{
+
+    font-weight:700;
+
+}
+
+.process-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:40px;
+
+    right:-50%;
+
+    width:100%;
+
+    height:3px;
+
+    background:#dbe8ff;
+
+    z-index:-1;
+
+}
+
+.process-card:last-child::after{
+
+    display:none;
+
+}
+
+/* ==========================================================
+   TESTIMONIALS
+========================================================== */
+
+.testimonial{
+
+    position:relative;
+
+    background:#fff;
+
+    border-radius:22px;
+
+    padding:35px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+    height:100%;
+
+}
+
+.testimonial:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.testimonial img{
+
+    width:85px;
+
+    height:85px;
+
+    object-fit:cover;
+
+    border-radius:50%;
+
+    border:4px solid #eef5ff;
+
+}
+
+.testimonial h5{
+
+    margin-top:20px;
+
+    font-weight:700;
+
+}
+
+.stars{
+
+    color:#ffc107;
+
+    letter-spacing:3px;
+
+    font-size:18px;
+
+}
+
+.testimonial::before{
+
+    content:"❝";
+
+    position:absolute;
+
+    top:15px;
+
+    right:25px;
+
+    font-size:60px;
+
+    color:#eef4ff;
+
+    font-family:serif;
+
+}
+
+/* ==========================================================
+   FAQ
+========================================================== */
+
+.accordion-button{
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-body{
+
+    line-height:1.8;
+
+    color:#666;
+
+}
+
+/* ==========================================================
+   BLOG CARDS
+========================================================== */
+
+.blog-card{
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+}
+
+.blog-card img{
+
+    transition:.45s;
+
+}
+
+.blog-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.blog-content{
+
+    padding:30px;
+
+}
+
+.blog-content h5{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.blog-content p{
+
+    color:#666;
+
+}
+
+.blog-content .btn{
+
+    margin-top:10px;
+
+}
+
+/* ==========================================================
+   NEWSLETTER
+========================================================== */
+
+.newsletter{
+
+    background:#fff;
+
+    border-radius:25px;
+
+    padding:70px;
+
+    box-shadow:0 20px 45px rgba(0,0,0,.08);
+
+}
+
+.newsletter input{
+
+    height:60px;
+
+    border-radius:50px;
+
+    padding:0 25px;
+
+}
+
+.newsletter button{
+
+    height:60px;
+
+    border-radius:50px;
+
+}
+
+/* ==========================================================
+   GOOGLE MAP
+========================================================== */
+
+.ratio iframe{
+
+    border-radius:25px;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    position:relative;
+
+}
+
+.footer h4,
+.footer h5{
+
+    margin-bottom:25px;
+
+    font-weight:700;
+
+}
+
+.footer a{
+
+    transition:.3s;
+
+}
+
+.footer a:hover{
+
+    color:#fff;
+
+    padding-left:8px;
+
+}
+
+.footer-bottom{
+
+    color:#bbb;
+
+}
+
+/* ==========================================================
+   FLOATING BUTTONS
+========================================================== */
+
+
+
+/* ==========================================================
+   ANIMATION HELPERS
+========================================================== */
+
+.fade-up{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(40px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+.zoom-in{
+
+    animation:zoomIn .8s ease forwards;
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.9);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media(max-width:991px){
+
+.hero{
+
+text-align:center;
+
+padding-top:100px;
+
+}
+
+.hero h1{
+
+font-size:2.8rem;
+
+}
+
+.hero img{
+
+margin-top:50px;
+
+max-width:80%;
+
+}
+
+.process-card::after{
+
+display:none;
+
+}
+
+.newsletter{
+
+padding:40px;
+
+}
+
+.section-title h2{
+
+font-size:2.2rem;
+
+}
+
+}
+
+@media(max-width:768px){
+
+.hero{
+
+min-height:auto;
+
+padding:100px 0 70px;
+
+}
+
+.hero h1{
+
+font-size:2.2rem;
+
+}
+
+.section-title{
+
+margin-bottom:40px;
+
+}
+
+.section-title h2{
+
+font-size:1.8rem;
+
+}
+
+.newsletter{
+
+padding:30px 20px;
+
+}
+
+
+
+.whatsapp-btn{
+
+right:20px;
+
+bottom:20px;
+
+}
+
+.call-btn{
+
+right:20px;
+
+bottom:90px;
+
+}
+
+}

@@ -1,0 +1,518 @@
+/* ==========================================================
+   MAR CONSULTANCY
+   LAYOUT
+   ========================================================== */
+
+/* ========= Announcement Bar ========= */
+
+.top-bar {
+    background: var(--secondary);
+    color: #fff;
+    font-size: 14px;
+    padding: 8px 0;
+}
+
+.top-bar a {
+    color: #fff;
+}
+
+.top-bar i {
+    color: var(--accent);
+    margin-right: 8px;
+}
+
+.top-bar .social-icons a {
+    width: 34px;
+    height: 34px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .12);
+    margin-left: 8px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.top-bar .social-icons a:hover {
+    background: var(--accent);
+    transform: translateY(-3px);
+}
+
+/* ========= Navbar ========= */
+
+.navbar {
+    height: 82px;
+    background: #fff;
+    transition: .35s;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, .05);
+    z-index: 999;
+}
+
+.navbar-brand img {
+    height: 58px;
+}
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(0);
+    width: 100%;
+    max-width: none;
+    height: auto !important;
+    background: #ffffff !important;
+    border-radius: 0;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, .08);
+    padding: 4px 24px;
+    z-index: 9999;
+    animation: slideDownFloating .4s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideDownFloating {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar.sticky .navbar-brand img {
+    height: 44px !important;
+    transition: .3s;
+}
+
+.navbar.sticky .navbar-brand span {
+    font-size: 1.1rem !important;
+    color: var(--secondary) !important;
+    transition: .3s;
+}
+
+.navbar.sticky .navbar-nav .nav-link {
+    color: var(--secondary) !important;
+}
+
+.navbar.sticky .navbar-nav .nav-link:hover,
+.navbar.sticky .navbar-nav .nav-link.active {
+    color: var(--primary) !important;
+}
+
+.navbar.sticky .navbar-nav .nav-link::after {
+    background: var(--primary) !important;
+}
+
+.navbar.sticky .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.15) !important;
+}
+
+.navbar.sticky .navbar-toggler-icon {
+    filter: none !important;
+}
+
+@media (max-width: 991px) {
+    .navbar.sticky .navbar-collapse {
+        background: #ffffff !important;
+        border-radius: 20px;
+        padding: 15px;
+        margin-top: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+    }
+}
+
+.navbar-nav .nav-link {
+    font-weight: 600;
+    color: var(--secondary);
+    margin-left: 18px;
+    position: relative;
+}
+
+.navbar-nav .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 0;
+    height: 2px;
+    background: var(--primary);
+    transition: .3s;
+}
+
+.navbar-nav .nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link.active {
+    color: var(--primary);
+}
+
+/* Custom navbar Free Counselling button shape and color to match Image 1 */
+.navbar .btn-warning {
+    background: #ffa500 !important;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+    font-weight: 600 !important;
+    padding: 12px 28px !important;
+    border: none !important;
+    box-shadow: none !important;
+    transform: none !important;
+    transition: background-color 0.2s ease-in-out !important;
+}
+
+.navbar .btn-warning:hover {
+    background: #e69500 !important;
+    color: #ffffff !important;
+    transform: none !important;
+}
+
+/* ========= Hero ========= */
+
+.hero {
+    min-height: 95vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(rgba(11, 36, 71, .78), rgba(11, 36, 71, .78)),
+        url("../images/hero/hero.jpg") center/cover;
+}
+
+.hero-content {
+    color: #fff;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    color: #fff;
+    font-size: 3.8rem;
+    margin-bottom: 25px;
+}
+
+.hero-content p {
+    color: #f4f4f4;
+    font-size: 1.1rem;
+    max-width: 650px;
+}
+
+.hero-buttons {
+    margin-top: 35px;
+}
+
+.hero-buttons .btn {
+    margin-right: 15px;
+}
+
+.hero-wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+/* ========= Statistics ========= */
+
+.stats {
+    margin-top: -80px;
+    position: relative;
+    z-index: 3;
+}
+
+.stat-card {
+    background: #fff;
+    padding: 35px;
+    border-radius: 18px;
+    text-align: center;
+    box-shadow: var(--shadow-lg);
+    transition: .35s;
+}
+
+.stat-card:hover {
+    transform: translateY(-8px);
+}
+
+.stat-card i {
+    font-size: 42px;
+    color: var(--primary);
+    margin-bottom: 15px;
+}
+
+.stat-card h2 {
+    color: var(--secondary);
+    margin-bottom: 5px;
+}
+
+.stat-card p {
+    margin: 0;
+}
+
+/* ========= Page Banner ========= */
+
+.page-banner {
+    height: auto !important;
+    padding: 60px 0 !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(135deg, #0B2447 0%, #19376D 100%) !important;
+}
+
+.page-banner h1 {
+    color: #fff;
+}
+
+.breadcrumb {
+    justify-content: center;
+    background: none;
+}
+
+.breadcrumb a {
+    color: #fff;
+}
+
+/* ========= CTA ========= */
+
+.cta {
+    background: var(--gradient-primary);
+    color: #fff;
+    border-radius: 25px;
+    padding: 60px;
+}
+
+.cta h2 {
+    color: #fff;
+}
+
+.cta p {
+    color: #f7f7f7;
+}
+
+/* ========= Newsletter ========= */
+
+.newsletter {
+    background: #fff;
+    padding: 70px;
+    border-radius: 25px;
+    box-shadow: var(--shadow-lg);
+}
+
+.newsletter input {
+    height: 60px;
+}
+
+.newsletter .btn {
+    height: 60px;
+}
+
+/* ========= Footer ========= */
+
+.footer {
+    background: #081b36;
+    color: #d9d9d9;
+    padding-top: 90px;
+}
+
+.footer h5 {
+    color: #fff;
+    margin-bottom: 25px;
+}
+
+.footer a {
+    color: #d9d9d9;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #fff;
+    padding-left: 8px;
+}
+
+.footer-bottom {
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, .08);
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-social a {
+    width: 42px;
+    height: 42px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, .08);
+    margin-right: 8px;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.footer-social a:hover {
+    background: var(--primary);
+}
+
+/* ========= Floating Buttons ========= */
+
+.whatsapp-btn,
+.call-btn {
+
+    position: fixed;
+
+    right: 25px;
+
+    width: 60px;
+
+    height: 60px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: #fff;
+
+    font-size: 24px;
+
+    z-index: 999;
+
+    box-shadow: var(--shadow-lg);
+
+    text-decoration: none;
+
+}
+
+.whatsapp-btn {
+
+    bottom: 25px;
+
+    background: #25D366;
+
+}
+
+.call-btn {
+
+    bottom: 100px;
+
+    background: #0D6EFD;
+
+}
+
+.whatsapp-btn:hover,
+.call-btn:hover {
+
+    transform: scale(1.1);
+
+    color: #fff;
+
+}
+
+/* ========= Responsive ========= */
+
+@media(max-width:991px) {
+
+    .hero {
+
+        text-align: center;
+
+        padding-top: 120px;
+
+    }
+
+    .hero-content h1 {
+
+        font-size: 2.7rem;
+
+    }
+
+    .stats {
+
+        margin-top: 40px;
+
+    }
+
+    .page-banner {
+
+        height: auto !important;
+        padding: 45px 0 !important;
+
+    }
+
+    .newsletter {
+
+        padding: 35px;
+
+    }
+
+    .back-to-top {
+
+        left: 15px;
+
+        bottom: 15px;
+
+        width: 50px;
+
+        height: 50px;
+
+    }
+
+}
+
+@media(max-width:767px) {
+
+    .hero-content h1 {
+
+        font-size: 2.1rem;
+
+    }
+
+    .cta {
+
+        padding: 35px;
+
+    }
+
+    .newsletter {
+
+        padding: 25px;
+
+    }
+
+    .footer {
+
+        text-align: center;
+
+    }
+
+}
+
+/* Centering overrides for top-bar and footer social icons */
+.top-bar .social-icons a,
+.footer-social a {
+    display: inline-flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    text-align: center !important;
+    text-decoration: none !important;
+}
+
+.top-bar .social-icons a i,
+.footer-social a i {
+    margin: 0 !important;
+    padding: 0 !important;
+    display: inline-block !important;
+    text-decoration: none !important;
+}
+
+.whatsapp-btn,
+.call-btn,
+.back-to-top {
+    text-decoration: none !important;
+}

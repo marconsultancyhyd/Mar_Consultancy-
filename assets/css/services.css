@@ -1,0 +1,1426 @@
+/* ==========================================================
+   MAR CONSULTANCY
+   SERVICES PAGE
+========================================================== */
+
+/* ==========================================================
+   PAGE BANNER
+========================================================== */
+
+.page-banner{
+
+    position:relative;
+
+    padding:60px 0;
+
+    background:linear-gradient(135deg, #0B2447 0%, #19376D 100%);
+
+    color:#fff;
+
+    overflow:hidden;
+
+}
+
+.page-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    border-radius:50%;
+
+    right:-130px;
+
+    top:-130px;
+
+    background:rgba(255,255,255,.06);
+
+}
+
+.page-banner h1{
+
+    font-size:2.6rem;
+
+    font-weight:800;
+
+}
+
+.breadcrumb{
+
+    justify-content:center;
+
+    background:none;
+
+    margin-top:20px;
+
+}
+
+.breadcrumb a{
+
+    color:#fff;
+
+    text-decoration:none;
+
+}
+
+.breadcrumb-item.active{
+
+    color:#ffc107;
+
+}
+
+/* ==========================================================
+   INTRODUCTION
+========================================================== */
+
+.badge-primary{
+
+    display:inline-block;
+
+    padding:8px 22px;
+
+    border-radius:40px;
+
+    background:#edf4ff;
+
+    color:var(--primary);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+}
+
+.intro-image{
+
+    position:relative;
+
+}
+
+.intro-image img{
+
+    border-radius:25px;
+
+    transition:.4s;
+
+}
+
+.intro-image img:hover{
+
+    transform:scale(1.03);
+
+}
+
+.intro-content h2{
+
+    font-size:2.7rem;
+
+    font-weight:800;
+
+}
+
+.intro-content p{
+
+    line-height:1.9;
+
+    color:#666;
+
+}
+
+/* ==========================================================
+   SERVICES GRID
+========================================================== */
+
+.service-card{
+
+    background:#fff;
+
+    border-radius:24px;
+
+    padding:40px 30px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+    border:1px solid rgba(0,0,0,.05);
+
+    box-shadow:0 10px 30px rgba(0,0,0,.06);
+
+}
+
+.service-card:hover{
+
+    transform:translateY(-12px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.service-card .icon{
+
+    width:90px;
+
+    height:90px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:#eef5ff;
+
+    transition:.35s;
+
+}
+
+.service-card:hover .icon{
+
+    background:var(--primary);
+
+}
+
+.service-card .icon i{
+
+    font-size:42px;
+
+    color:var(--primary);
+
+    transition:.35s;
+
+}
+
+.service-card:hover .icon i{
+
+    color:#fff;
+
+}
+
+.service-card h4{
+
+    margin:30px 0 18px;
+
+    font-weight:700;
+
+}
+
+.service-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   DETAIL CARDS
+========================================================== */
+
+.card-modern{
+
+    background:#fff;
+
+    border:none;
+
+    border-radius:24px;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    overflow:hidden;
+
+}
+
+.card-modern:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.card-modern .card-body{
+
+    padding:30px;
+
+}
+
+.card-modern i{
+
+    font-size:60px;
+
+}
+
+.card-modern h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.card-modern p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   PRE-DEPARTURE
+========================================================== */
+
+.pre-departure img{
+
+    border-radius:25px;
+
+    box-shadow:0 20px 40px rgba(0,0,0,.10);
+
+}
+
+.pre-departure ul{
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+.pre-departure li{
+
+    margin-bottom:20px;
+
+    font-size:17px;
+
+}
+
+.pre-departure li i{
+
+    color:#198754;
+
+    margin-right:10px;
+
+}
+/* ==========================================================
+   WHY CHOOSE OUR SERVICES
+========================================================== */
+
+.stat-card{
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:40px 25px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    height:100%;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.stat-card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+
+}
+
+.stat-card i{
+
+    font-size:55px;
+
+    margin-bottom:20px;
+
+}
+
+.stat-card h4{
+
+    font-weight:700;
+
+    margin-bottom:15px;
+
+}
+
+.stat-card p{
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   ADMISSION PROCESS
+========================================================== */
+
+.process-card{
+
+    position:relative;
+
+    background:#ffffff;
+
+    border-radius:22px;
+
+    padding:35px 20px;
+
+    text-align:center;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    height:100%;
+
+}
+
+.process-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:5px;
+
+    background:linear-gradient(90deg,var(--primary),#ffb703);
+
+}
+
+.process-card:hover{
+
+    transform:translateY(-10px);
+
+}
+
+.process-number{
+
+    width:70px;
+
+    height:70px;
+
+    border-radius:50%;
+
+    margin:0 auto 20px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:linear-gradient(135deg,var(--primary),#2d89ff);
+
+    color:#ffffff;
+
+    font-size:24px;
+
+    font-weight:700;
+
+}
+
+.process-card h5{
+
+    font-weight:700;
+
+    line-height:1.5;
+
+}
+
+/* ==========================================================
+   FAQ
+========================================================== */
+
+.accordion-item{
+
+    border:none;
+
+    border-radius:16px !important;
+
+    overflow:hidden;
+
+    margin-bottom:18px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.06);
+
+}
+
+.accordion-button{
+
+    padding:22px 25px;
+
+    font-weight:700;
+
+    font-size:17px;
+
+    background:#ffffff;
+
+}
+
+.accordion-button:not(.collapsed){
+
+    background:#eef5ff;
+
+    color:var(--primary);
+
+    box-shadow:none;
+
+}
+
+.accordion-button:focus{
+
+    box-shadow:none;
+
+}
+
+.accordion-body{
+
+    padding:25px;
+
+    color:#666;
+
+    line-height:1.8;
+
+}
+
+/* ==========================================================
+   CTA
+========================================================== */
+
+.cta{
+
+    background:linear-gradient(135deg,#0d6efd,#003f88);
+
+    border-radius:28px;
+
+    padding:80px 50px;
+
+    text-align:center;
+
+    color:#ffffff;
+
+    overflow:hidden;
+
+    position:relative;
+
+}
+
+.cta::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    top:-150px;
+
+    right:-120px;
+
+}
+
+.cta h2{
+
+    font-size:2.5rem;
+
+    font-weight:800;
+
+}
+
+.cta p{
+
+    max-width:750px;
+
+    margin:20px auto 35px;
+
+    line-height:1.9;
+
+}
+
+.cta .btn{
+
+    padding:15px 40px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   NEWSLETTER
+========================================================== */
+
+.newsletter{
+
+    background:#ffffff;
+
+    border-radius:24px;
+
+    padding:60px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.08);
+
+}
+
+.newsletter h2{
+
+    font-weight:800;
+
+}
+
+.newsletter p{
+
+    color:#666;
+
+}
+
+.newsletter input{
+
+    height:58px;
+
+    border-radius:50px;
+
+    padding-left:20px;
+
+}
+
+.newsletter button{
+
+    height:58px;
+
+    border-radius:50px;
+
+    font-weight:700;
+
+}
+
+/* ==========================================================
+   FOOTER
+========================================================== */
+
+.footer{
+
+    background:#07162f;
+
+    color:#d7d7d7;
+
+    padding:80px 0 25px;
+
+}
+
+.footer h5{
+
+    color:#ffffff;
+
+    margin-bottom:20px;
+
+    font-weight:700;
+
+}
+
+.footer p{
+
+    color:#cfcfcf;
+
+    line-height:1.8;
+
+}
+
+.footer ul{
+
+    list-style:none;
+
+    padding:0;
+
+}
+
+.footer ul li{
+
+    margin-bottom:12px;
+
+}
+
+.footer ul li a{
+
+    color:#d0d0d0;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.footer ul li a:hover{
+
+    color:#ffc107;
+
+    padding-left:6px;
+
+}
+
+.footer-social{
+
+    display:flex;
+
+    gap:12px;
+
+    margin-top:20px;
+
+}
+
+.footer-social a{
+
+    width:42px;
+
+    height:42px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.08);
+
+    color:#ffffff;
+
+    transition:.3s;
+
+}
+
+.footer-social a:hover{
+
+    background:#ffc107;
+
+    color:#07162f;
+
+}
+
+.footer hr{
+
+    border-color:rgba(255,255,255,.1);
+
+}
+
+/* ==========================================================
+   FLOATING BUTTONS
+========================================================== */
+
+.whatsapp-btn,
+
+.call-btn{
+
+    position:fixed;
+
+    right:25px;
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-size:25px;
+
+    z-index:999;
+
+    transition:.35s;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.25);
+
+}
+
+.whatsapp-btn{
+
+    bottom:25px;
+
+    background:#25D366;
+
+}
+
+.call-btn{
+
+    bottom:95px;
+
+    background:#0d6efd;
+
+}
+
+.whatsapp-btn:hover,
+
+.call-btn:hover{
+
+    transform:translateY(-6px);
+
+}
+
+
+/* ==========================================================
+   ANIMATION UTILITIES
+========================================================== */
+
+.fade-up{
+
+    opacity:0;
+
+    transform:translateY(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-up.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+.fade-left{
+
+    opacity:0;
+
+    transform:translateX(-40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-left.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.fade-right{
+
+    opacity:0;
+
+    transform:translateX(40px);
+
+    transition:all .8s ease;
+
+}
+
+.fade-right.show{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.zoom-in{
+
+    opacity:0;
+
+    transform:scale(.92);
+
+    transition:all .8s ease;
+
+}
+
+.zoom-in.show{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
+
+/* ==========================================================
+   GLOBAL SECTION STYLING
+========================================================== */
+
+section{
+
+    position:relative;
+
+}
+
+.section-title{
+
+    margin-bottom:65px;
+
+}
+
+.section-title span{
+
+    display:inline-block;
+
+    color:var(--primary);
+
+    font-weight:700;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+    margin-bottom:10px;
+
+}
+
+.section-title h2{
+
+    font-size:2.7rem;
+
+    font-weight:800;
+
+    margin-bottom:18px;
+
+}
+
+.section-title p{
+
+    max-width:760px;
+
+    margin:auto;
+
+    color:#666;
+
+    line-height:1.9;
+
+}
+
+/* ==========================================================
+   PREMIUM HOVER EFFECTS
+========================================================== */
+
+.service-card,
+.card-modern,
+.process-card,
+.stat-card{
+
+    will-change:transform;
+
+}
+
+.service-card:hover{
+
+    border-color:rgba(13,110,253,.25);
+
+}
+
+.card-modern:hover{
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+.process-card:hover .process-number{
+
+    transform:rotate(360deg);
+
+}
+
+.process-number{
+
+    transition:.7s;
+
+}
+
+.newsletter{
+
+    transition:.35s;
+
+}
+
+.newsletter:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:0 25px 50px rgba(0,0,0,.12);
+
+}
+
+.cta{
+
+    transition:.35s;
+
+}
+
+.cta:hover{
+
+    transform:translateY(-8px);
+
+}
+
+/* ==========================================================
+   IMAGE HELPERS
+========================================================== */
+
+img{
+
+    max-width:100%;
+
+    display:block;
+
+}
+
+.round-xl{
+
+    border-radius:24px;
+
+}
+
+.shadow-soft{
+
+    box-shadow:0 18px 40px rgba(0,0,0,.12);
+
+}
+
+/* ==========================================================
+   FORM STYLING
+========================================================== */
+
+input.form-control:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 .2rem rgba(13,110,253,.12);
+
+}
+
+.btn{
+
+    transition:.3s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================================
+   RESPONSIVE
+========================================================== */
+
+@media (max-width:1200px){
+
+.page-banner h1{
+
+font-size:3rem;
+
+}
+
+.section-title h2{
+
+font-size:2.4rem;
+
+}
+
+.intro-content h2{
+
+font-size:2.4rem;
+
+}
+
+}
+
+@media (max-width:992px){
+
+.page-banner{
+
+padding:50px 0;
+
+text-align:center;
+
+}
+
+.intro-content{
+
+margin-top:40px;
+
+}
+
+.pre-departure img{
+
+margin-bottom:35px;
+
+}
+
+.newsletter{
+
+padding:40px;
+
+}
+
+.cta{
+
+padding:60px 35px;
+
+}
+
+.footer{
+
+text-align:center;
+
+}
+
+.footer-social{
+
+justify-content:center;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.page-banner h1{
+
+font-size:2.4rem;
+
+}
+
+.section-title h2{
+
+font-size:2rem;
+
+}
+
+.intro-content h2{
+
+font-size:2rem;
+
+}
+
+.service-card{
+
+padding:30px 22px;
+
+}
+
+.card-modern .card-body{
+
+padding:25px;
+
+}
+
+.newsletter{
+
+padding:30px;
+
+}
+
+.cta h2{
+
+font-size:2rem;
+
+}
+
+}
+
+@media (max-width:576px){
+
+.page-banner{
+
+padding:45px 0;
+
+}
+
+.page-banner h1{
+
+font-size:2rem;
+
+}
+
+.badge-primary{
+
+font-size:12px;
+
+padding:7px 16px;
+
+}
+
+.section-title{
+
+margin-bottom:45px;
+
+}
+
+.section-title h2{
+
+font-size:1.8rem;
+
+}
+
+.intro-content h2{
+
+font-size:1.8rem;
+
+}
+
+.service-card{
+
+padding:25px 18px;
+
+}
+
+.card-modern .card-body{
+
+padding:20px;
+
+}
+
+.process-number{
+
+width:60px;
+
+height:60px;
+
+font-size:20px;
+
+}
+
+.newsletter{
+
+padding:25px;
+
+}
+
+.cta{
+
+padding:45px 20px;
+
+}
+
+.cta h2{
+
+font-size:1.7rem;
+
+}
+
+.cta p{
+
+font-size:15px;
+
+}
+
+.whatsapp-btn,
+
+.call-btn{
+
+width:55px;
+
+height:55px;
+
+font-size:22px;
+
+right:15px;
+
+}
+
+.whatsapp-btn{
+
+bottom:15px;
+
+}
+
+.call-btn{
+
+bottom:85px;
+
+}
+
+
+
+}
+
+/* ==========================================================
+   PRINT STYLES
+========================================================== */
+
+@media print{
+
+.top-bar,
+
+.navbar,
+
+.footer,
+
+.whatsapp-btn,
+
+.call-btn,
+
+.back-to-top{
+
+display:none !important;
+
+}
+
+.page-banner{
+
+background:#ffffff;
+
+color:#000;
+
+padding:30px 0;
+
+}
+
+body{
+
+background:#ffffff;
+
+}
+
+}
+
+/* ==========================================================
+   PROFESSIONAL SERVICES ENHANCEMENTS
+========================================================== */
+
+/* Tighter section padding - override Bootstrap py-5 */
+section.py-5{
+    padding-top:70px !important;
+    padding-bottom:70px !important;
+}
+
+/* Alternate section backgrounds */
+.bg-section{
+    background: linear-gradient(135deg, #f8faff 0%, #eef4ff 100%);
+}
+
+/* Intro section upgrade */
+.intro-content h2{
+    font-size:2.4rem;
+    font-weight:800;
+    color:#0B2447;
+    line-height:1.2;
+}
+
+.intro-content h3{
+    font-weight:800;
+    color:#0d6efd;
+    font-size:2rem;
+}
+
+/* Service card professional polish */
+.service-card{
+    position:relative;
+    overflow:hidden;
+}
+
+.service-card::after{
+    content:"";
+    position:absolute;
+    inset:0;
+    border-radius:24px;
+    border:2px solid transparent;
+    transition:.35s;
+}
+
+.service-card:hover::after{
+    border-color:#0d6efd;
+}
+
+.service-card:hover{
+    background:linear-gradient(145deg,#fff 60%,#f0f6ff);
+}
+
+/* Section headings */
+.section-title span{
+    display:inline-block;
+    font-size:13px;
+    font-weight:700;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    color:#0d6efd;
+    margin-bottom:14px;
+}
+
+.section-title h2{
+    font-size:2.3rem;
+    font-weight:800;
+    color:#0B2447;
+    line-height:1.2;
+}
+
+/* Badge styling */
+.badge-primary{
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+}
+
+/* Process/step cards */
+.step-number, .number{
+    font-size:3rem;
+    font-weight:900;
+    color:#e8f0fd;
+    line-height:1;
+}
+
+/* Modern card tweaks */
+.card-modern{
+    border-left: 4px solid #0d6efd;
+}
+
+.card-modern .card-body{
+    padding:28px;
+}
+
+.card-modern i{
+    font-size:46px;
+    color:#0d6efd;
+    margin-bottom:18px;
+}
+
+/* Row stats inside intro */
+.intro-content .row h3{
+    font-size:2.5rem;
+    font-weight:900;
+    color:#0d6efd;
+}
+
+/* ==========================================================
+   END OF FILE
+========================================================== */

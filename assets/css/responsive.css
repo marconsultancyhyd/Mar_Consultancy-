@@ -1,0 +1,569 @@
+/* ==========================================================
+   MAR CONSULTANCY — RESPONSIVE / MOBILE FIXES
+   ========================================================== */
+
+/* ==========================================
+   TABLET — max-width: 991px
+   ========================================== */
+
+@media (max-width: 991px) {
+
+    /* --- Top Bar --- */
+    .top-bar {
+        font-size: 12px;
+        padding: 6px 0;
+    }
+
+    .top-bar .social-icons a {
+        width: 28px;
+        height: 28px;
+        margin-left: 4px;
+    }
+
+    /* --- Navbar --- */
+    .navbar {
+        height: auto;
+        padding: 8px 15px;
+    }
+
+    .navbar-brand img {
+        height: 42px;
+    }
+
+    .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar {
+        position: relative;
+        z-index: 9999;
+    }
+
+    .navbar-collapse {
+        background: #0B2447 !important;
+        border-radius: 16px;
+        padding: 20px !important;
+        margin-top: 10px;
+        margin-left: auto;
+        border: 1px solid rgba(255, 255, 255, 0.1) !important;
+        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3) !important;
+        position: relative;
+        z-index: 9999;
+        text-align: right;
+    }
+
+    .navbar-nav {
+        align-items: flex-end !important;
+    }
+
+    .navbar-nav .nav-link {
+        margin-left: 0;
+        padding: 12px 18px !important;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+        color: #ffffff !important;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+
+    .navbar-nav .nav-link:hover,
+    .navbar-nav .nav-link.active {
+        color: #ffa500 !important;
+        background: rgba(255, 255, 255, 0.06);
+        border-radius: 8px;
+    }
+
+    .navbar-nav .nav-link::after {
+        display: none;
+    }
+
+    .navbar .btn-warning {
+        width: 100%;
+        text-align: center;
+        margin-top: 12px;
+        padding: 14px 20px !important;
+        border-radius: 12px !important;
+        color: #ffffff !important;
+    }
+
+    .navbar-toggler {
+        border: 2px solid rgba(0, 0, 0, 0.15) !important;
+        padding: 6px 10px;
+    }
+
+    .navbar-toggler:focus {
+        box-shadow: none !important;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        min-height: auto;
+        padding: 80px 0 50px;
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 2.4rem !important;
+    }
+
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .hero-buttons .btn {
+        margin-right: 0;
+        width: 80%;
+        max-width: 300px;
+        text-align: center;
+    }
+
+    /* Hide the floating logo on tablet & mobile — center the text */
+    .hero .col-lg-6:last-child {
+        display: none !important;
+    }
+
+    /* --- Hero Stats (counters row inside hero) --- */
+    .hero .counter {
+        font-size: 1.6rem !important;
+    }
+
+    .hero .col-4 p {
+        font-size: 0.8rem !important;
+    }
+
+    /* --- Stats Cards Section --- */
+    .stats {
+        margin-top: 30px;
+    }
+
+    .stat-card {
+        padding: 20px 15px;
+    }
+
+    .stat-card i {
+        font-size: 32px;
+    }
+
+    .stat-card h2 {
+        font-size: 1.6rem;
+    }
+
+    /* --- Process / Roadmap --- */
+    .process-card {
+        padding: 20px 12px;
+    }
+
+    .process-number {
+        width: 60px !important;
+        height: 60px !important;
+        font-size: 22px !important;
+    }
+
+    .process-card h5 {
+        font-size: 0.95rem;
+    }
+
+    /* --- Service Cards --- */
+    .service-card {
+        padding: 25px 18px;
+    }
+
+    /* --- CTA --- */
+    .cta {
+        padding: 40px 25px;
+        border-radius: 18px;
+    }
+
+    /* --- Floating Buttons --- */
+    .whatsapp-btn,
+    .call-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        right: 15px;
+    }
+
+    .whatsapp-btn {
+        bottom: 15px;
+    }
+
+    .call-btn {
+        bottom: 75px;
+    }
+
+    .back-to-top {
+        width: 44px;
+        height: 44px;
+        left: 12px;
+        bottom: 12px;
+    }
+
+    /* --- Footer --- */
+    .footer {
+        padding-top: 50px;
+    }
+}
+
+/* ==========================================
+   MOBILE — max-width: 767px
+   ========================================== */
+
+@media (max-width: 767px) {
+
+    /* --- Top Bar --- */
+    .top-bar {
+        font-size: 11px;
+        padding: 5px 0;
+        text-align: center;
+    }
+
+    .top-bar .container {
+        flex-direction: column !important;
+        gap: 6px;
+    }
+
+    .top-bar .social-icons {
+        justify-content: center !important;
+    }
+
+    .top-bar .social-icons a {
+        width: 26px;
+        height: 26px;
+        font-size: 11px;
+    }
+
+    /* --- Navbar --- */
+    .navbar-brand img {
+        height: 36px;
+    }
+
+    .navbar-brand span {
+        font-size: 0.9rem;
+    }
+
+    /* --- Hero --- */
+    .hero {
+        padding: 60px 0 40px;
+    }
+
+    .hero h1 {
+        font-size: 1.9rem !important;
+        line-height: 1.25;
+    }
+
+    .hero-content p,
+    .hero p {
+        font-size: 0.95rem !important;
+        line-height: 1.6;
+    }
+
+    .hero-buttons .btn {
+        width: 90%;
+        padding: 14px 20px;
+        font-size: 0.95rem;
+    }
+
+    /* --- Hero Stats (counters row inside hero) --- */
+    .hero .counter {
+        font-size: 1.3rem !important;
+    }
+
+    .hero .col-4 p {
+        font-size: 0.7rem !important;
+    }
+
+    /* --- Section Titles --- */
+    .section-title {
+        margin-bottom: 30px;
+    }
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .section-title p {
+        font-size: 0.9rem;
+    }
+
+    /* --- Stats Cards --- */
+    .stat-card {
+        padding: 18px 12px;
+    }
+
+    .stat-card i {
+        font-size: 28px;
+        margin-bottom: 10px;
+    }
+
+    .stat-card h2 {
+        font-size: 1.4rem;
+        margin-bottom: 4px;
+    }
+
+    .stat-card p {
+        font-size: 0.85rem;
+    }
+
+    /* --- Process Steps --- */
+    .process-number {
+        width: 52px !important;
+        height: 52px !important;
+        font-size: 18px !important;
+        margin-bottom: 15px !important;
+    }
+
+    .process-card {
+        padding: 15px 8px;
+    }
+
+    .process-card h5 {
+        font-size: 0.85rem;
+        margin-top: 5px;
+    }
+
+    /* --- Service Cards --- */
+    .service-card {
+        padding: 20px 15px;
+    }
+
+    .service-card .icon i {
+        font-size: 34px;
+    }
+
+    .service-card h4 {
+        font-size: 1.05rem;
+    }
+
+    .service-card p {
+        font-size: 0.88rem;
+    }
+
+    /* --- Card Modern --- */
+    .card-modern {
+        padding: 20px 15px;
+    }
+
+    /* --- CTA --- */
+    .cta {
+        padding: 30px 18px;
+        border-radius: 14px;
+    }
+
+    .cta h2 {
+        font-size: 1.5rem;
+    }
+
+    .cta p {
+        font-size: 0.9rem;
+    }
+
+    .cta .btn {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    /* --- Footer --- */
+    .footer {
+        padding-top: 40px;
+        text-align: center;
+    }
+
+    .footer .col-lg-4,
+    .footer .col-lg-2,
+    .footer .col-lg-3 {
+        text-align: center;
+    }
+
+    .footer-social {
+        justify-content: center;
+        display: flex;
+        gap: 6px;
+    }
+
+    .footer h5 {
+        margin-top: 25px;
+        margin-bottom: 15px;
+        font-size: 1.05rem;
+    }
+
+    .footer a {
+        display: inline-block;
+        margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+        margin-top: 30px;
+        padding: 15px 0;
+        font-size: 0.82rem;
+    }
+
+    /* --- Floating Buttons --- */
+    .whatsapp-btn,
+    .call-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 18px;
+        right: 12px;
+    }
+
+    .whatsapp-btn {
+        bottom: 12px;
+    }
+
+    .call-btn {
+        bottom: 68px;
+    }
+
+    .back-to-top {
+        width: 40px;
+        height: 40px;
+        left: 10px;
+        bottom: 10px;
+        font-size: 14px;
+    }
+
+    /* --- Accordion / FAQ --- */
+    .accordion-button {
+        font-size: 0.92rem;
+        padding: 14px 16px;
+    }
+
+    .accordion-body {
+        font-size: 0.88rem;
+        padding: 14px 16px;
+    }
+
+    /* --- Intro Section (services page image + text) --- */
+    .intro-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .intro-content p {
+        font-size: 0.9rem;
+    }
+
+    /* --- Badge Primary --- */
+    .badge-primary {
+        font-size: 0.75rem;
+    }
+
+    /* --- Newsletter --- */
+    .newsletter {
+        padding: 20px 15px;
+    }
+
+    .newsletter h2 {
+        font-size: 1.4rem;
+    }
+
+    .newsletter input {
+        height: 48px;
+    }
+
+    .newsletter .btn {
+        height: 48px;
+    }
+}
+
+/* ==========================================
+   SMALL MOBILE — max-width: 480px
+   ========================================== */
+
+@media (max-width: 480px) {
+
+    /* --- Top Bar --- */
+    .top-bar {
+        font-size: 10px;
+    }
+
+    .top-bar .d-flex {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 4px;
+    }
+
+    /* --- Hero --- */
+    .hero h1 {
+        font-size: 1.6rem !important;
+    }
+
+    .hero-content p,
+    .hero p {
+        font-size: 0.88rem !important;
+    }
+
+    .hero-buttons .btn {
+        width: 100%;
+        font-size: 0.88rem;
+        padding: 12px 16px;
+    }
+
+    /* --- Hero Stats --- */
+    .hero .counter {
+        font-size: 1.1rem !important;
+    }
+
+    .hero .col-4 p {
+        font-size: 0.6rem !important;
+    }
+
+    /* --- Section Titles --- */
+    .section-title h2 {
+        font-size: 1.35rem;
+    }
+
+    /* --- Stats Cards: 2-column grid on very small --- */
+    .stats .col-lg-3 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .stat-card {
+        padding: 14px 10px;
+    }
+
+    .stat-card h2 {
+        font-size: 1.2rem;
+    }
+
+    .stat-card p {
+        font-size: 0.78rem;
+    }
+
+    /* --- Process Steps: smaller on small mobile --- */
+    .process-number {
+        width: 46px !important;
+        height: 46px !important;
+        font-size: 16px !important;
+        margin-bottom: 10px !important;
+    }
+
+    .process-card h5 {
+        font-size: 0.78rem;
+    }
+
+    /* --- CTA --- */
+    .cta {
+        padding: 25px 14px;
+    }
+
+    .cta h2 {
+        font-size: 1.3rem;
+    }
+
+    /* --- Footer --- */
+    .footer {
+        padding-top: 30px;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+}
