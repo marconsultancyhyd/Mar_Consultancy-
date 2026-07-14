@@ -67,18 +67,21 @@ function initializeContactForm() {
 
     const toast = document.getElementById("successToast");
 
-    const GOOGLE_FORM_URL =
-        "https://docs.google.com/forms/d/e/1FAIpQLSf3TKtlLXD334YK8sMhOZMLM4VtfHoi3YXFAh9ujly9se6L8Q/formResponse";
+    const submitFrame = document.querySelector(
+        'iframe[name="googleFormSubmitFrame"]'
+    );
 
-    form.addEventListener("submit", async (event) => {
-
-        event.preventDefault();
+    form.addEventListener("submit", (event) => {
 
         if (!validateForm(form)) {
+
+            event.preventDefault();
 
             return;
 
         }
+
+        event.preventDefault();
 
         submitButton.disabled = true;
 
@@ -87,17 +90,19 @@ function initializeContactForm() {
 
         loading.classList.add("show");
 
-        try {
+        if (submitFrame) {
 
-            await fetch(GOOGLE_FORM_URL, {
+            submitFrame.addEventListener("load", handleGoogleFormSuccess, {
 
-                method: "POST",
-
-                mode: "no-cors",
-
-                body: new FormData(form)
+                once: true
 
             });
+
+        }
+
+        HTMLFormElement.prototype.submit.call(form);
+
+        function handleGoogleFormSuccess() {
 
             loading.classList.remove("show");
 
@@ -110,18 +115,6 @@ function initializeContactForm() {
                 toast.classList.remove("show");
 
             }, 4000);
-
-        }
-
-        catch (error) {
-
-            loading.classList.remove("show");
-
-            alert("Unable to submit the enquiry. Please try again.");
-
-        }
-
-        finally {
 
             submitButton.disabled = false;
 
@@ -149,7 +142,7 @@ function validateForm(form) {
         /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     const phonePattern =
-        /^[6-9]\d{9}$/;
+        /^\d{10,15}$/;
 
     if (!emailPattern.test(email.value.trim())) {
 
@@ -163,7 +156,7 @@ function validateForm(form) {
 
     if (!phonePattern.test(phone.value.trim())) {
 
-        alert("Please enter a valid 10-digit Indian mobile number.");
+        alert("Please enter a valid mobile number (10 to 15 digits).");
 
         phone.focus();
 
@@ -189,7 +182,7 @@ function initializePhoneValidation() {
     phone.addEventListener("input", () => {
 
         phone.value =
-            phone.value.replace(/\D/g, "").substring(0, 10);
+            phone.value.replace(/\D/g, "").substring(0, 15);
 
     });
 
