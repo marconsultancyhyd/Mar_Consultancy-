@@ -18,7 +18,6 @@ document.addEventListener("DOMContentLoaded", () => {
     initSmoothScroll();
     initNavbarActive();
     initRevealCards();
-    initHeroAnimation();
     initNewsletter();
     initFloatingButtons();
 
@@ -275,34 +274,6 @@ function initRevealCards(){
         observer.observe(card);
 
     });
-
-}
-
-/* ==========================================================
-   HERO FLOAT EFFECT
-========================================================== */
-
-function initHeroAnimation(){
-
-    const image=document.querySelector(".hero img");
-
-    if(!image) return;
-
-    let direction=1;
-
-    let y=0;
-
-    setInterval(()=>{
-
-        y+=direction;
-
-        image.style.transform=`translateY(${y}px)`;
-
-        if(y>=12) direction=-1;
-
-        if(y<=0) direction=1;
-
-    },40);
 
 }
 

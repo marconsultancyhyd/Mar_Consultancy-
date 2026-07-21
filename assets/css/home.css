@@ -852,6 +852,13 @@
    RESPONSIVE
 ========================================================== */
 
+/* Kept out of the desktop layout; displayed only in the mobile breakpoint below. */
+.mobile-between-logo{
+
+display:none;
+
+}
+
 @media(max-width:991px){
 
 .hero{
@@ -897,6 +904,32 @@ font-size:2.2rem;
 }
 
 @media(max-width:768px){
+
+.mobile-between-logo{
+
+display:block;
+
+padding:24px 20px 0;
+
+background:#f5f8fc;
+
+}
+
+.mobile-between-logo img{
+
+display:block;
+
+width:100%;
+
+max-width:560px;
+
+height:auto;
+
+margin:0 auto;
+
+border-radius:16px;
+
+}
 
 .hero{
 

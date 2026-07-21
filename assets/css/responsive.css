@@ -26,8 +26,17 @@
         padding: 8px 15px;
     }
 
+    .navbar .container {
+        justify-content: space-between;
+    }
+
     .navbar-brand img {
         height: 42px;
+    }
+
+    .navbar-brand {
+        order: 1;
+        margin-left: 0;
     }
 
     .navbar-brand span {
@@ -86,6 +95,8 @@
     }
 
     .navbar-toggler {
+        order: 2;
+        margin-left: auto;
         border: 2px solid rgba(0, 0, 0, 0.15) !important;
         padding: 6px 10px;
     }
@@ -245,7 +256,29 @@
     }
 
     .navbar-brand span {
-        font-size: 0.9rem;
+        font-size: 1rem !important;
+    }
+
+    /* Keep the brand and menu button on the same mobile navbar row. */
+    .navbar .container {
+        flex-wrap: nowrap;
+    }
+
+    .navbar-brand {
+        min-width: 0;
+        max-width: calc(100% - 78px);
+    }
+
+    .navbar-toggler {
+        margin-left: 20px !important;
+        flex-shrink: 0;
+    }
+
+    .navbar-collapse {
+        position: absolute;
+        top: calc(100% + 10px);
+        left: 15px;
+        right: 15px;
     }
 
     /* --- Hero --- */
@@ -277,6 +310,17 @@
 
     .hero .col-4 p {
         font-size: 0.7rem !important;
+    }
+
+    .hero-mobile-logo {
+        display: flex !important;
+        margin-top: 24px;
+    }
+
+    .hero-mobile-logo > div {
+        max-width: 220px !important;
+        width: 100%;
+        margin: 0 auto;
     }
 
     /* --- Section Titles --- */
